@@ -1,0 +1,88 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+         "responses": ["We're always open!! "]
+        },
+        {"tag": "mopeds",
+         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
+         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        },
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "rental",
+         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
+         "responses": ["Are you looking to rent today or later this week?"],
+         "context_set": "rentalday"
+        },
+        {"tag": "today",
+         "patterns": ["today","What is today","What is special today?"],
+         "responses": ["Today is our Recruitment day..."],
+         "context_filter": "rentalday"
+        },
+        {"tag": "recruitment",
+         "patterns": ["What is the time and date for recruitment test?"],
+         "responses": ["Recruitment test will start at 4:00pm on 31 JULY"],
+         "context_filter": "recruitment"
+        },        
+        {"tag": "love",
+         "patterns": ["love you","I love you","Love your algo"],
+         "responses": ["Thank You,Love You too..."],
+         "context_filter": ""
+        },        
+        {"tag": "seminar",
+         "patterns": ["Timings of seminar?"],
+         "responses": ["For CS students = 12:40 to 1:30 and for IT students = 2:20 to 3:10"],
+         "context_filter": ""
+        },        
+        {"tag": "seminarquestions",
+         "patterns": ["What is the purpose of seminar?"],
+         "responses": ["To spread awareness among students regarding BigDataScience"],
+         "context_filter": ""
+        },        
+        {"tag": "recruitmentquestions",
+         "patterns": ["What type of questions will be asked in the test?"],
+         "responses": ["Html/CSS , C, JAVA ,APTITUDE,Algorithms,BigDataScience"],
+         "context_filter": ""
+        },        
+        {"tag": "lab",
+         "patterns": ["What happens in Big Data Lab","What type of technologies do we work on"],
+         "responses": ["Here we work to provide easy solutions to complex problems using advanced concepts of BigData,DataScience,ML,NLP and much more"],
+         "context_filter": ""
+        },        
+        {"tag": "placement",
+         "patterns": ["What is the placement status?","How well placed are your seniors?","What is the placement status of BDCoE members?"],
+         "responses": ["All the BDCoE members are well placed in Companies like DataValAnalytics,NEC technologies etc"],
+         "context_filter": ""
+        },        
+        {"tag": "benefits",
+         "patterns": ["What is the timings of lab?","Net speed in lab?"],
+         "responses": ["All the members have access to the lab 24/7 and also have an excellent internet facility"],
+         "context_filter": ""
+        },        
+        {"tag": "",
+         "patterns": [],
+         "responses": ["Sorry, I can't understand that...."],
+         "context_filter": ""
+        }
+   ]
+}
+
